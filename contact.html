@@ -133,7 +133,7 @@
         grid-column: 1/5;
         grid-row: 13/21;
         background: white;
-        border: 2px solid #000000 ;
+        /*border: 2px solid #000000 ;*/
         padding: 20px;
     }
 
@@ -146,7 +146,7 @@
         grid-column: 5/9;
         grid-row: 13/21;
         background: white;
-        border: 2px solid #000000;
+        /*border: 2px solid #000000;*/
         padding: 20px;
     }
 
@@ -154,11 +154,13 @@
         grid-column: 9/13;
         grid-row: 13/21;
         background: white;
-        border: 2px solid #000000 ;
+        /*border: 2px solid #000000 ;*/
+        padding: 50px;
     }
 
+    #submit_button {
 
-
+    }
 
 
     /*     FOOTER    */
@@ -216,8 +218,6 @@
 
 
 
-
-
         <!--NAVIGATION/HEADER-->
         <div class="nav-bar"> </div>
         <div class="logo"> OUT OF THE
@@ -255,7 +255,28 @@
         </div>
 
 
-       <div class="contactbox3"> box3 </div>
+      <div class="contactbox3">
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+        <div class="row">
+            <label for="name">Your name:</label>
+            <input id="name" class="input" name="name" type="text" value="" size="50" />
+            <br />
+        </div>
+        <div class="row">
+            <label for="email">Your email:</label>
+            <br />
+            <input id="email" class="input" name="email" type="text" value="" size="50" />
+            <br />
+        </div>
+        <div class="row">
+            <label for="message">Your message:</label>
+            <br />
+            <textarea id="message" class="input" name="message" rows="10" cols="50"></textarea>
+            <br /><br /><br />
+        </div>
+        <input id="submit_button" type="submit" value="Send email" />
+    </form>
+</div>
 
 
 

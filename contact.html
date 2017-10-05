@@ -116,11 +116,15 @@
         background: white;
         border: 4px solid #000000;
     }
-    
 
 
 
+    /*     GOOGLE MAP    */
 
+    #map {
+        height: 100%;
+        width: 100%;
+      }
 
 
     /*     FOOTER    */
@@ -166,6 +170,7 @@
 
     /*     END OF FOOTER    */
 
+
     </style>
 
 </head>
@@ -197,7 +202,9 @@
 
         <!--page content -->
 
-        <div class="googlemaps"> google maps </div>
+        <div class="googlemaps">
+            <div id='map'></div>
+        </div>
 
         <div class="address"> address / phone </div>
 
@@ -234,6 +241,8 @@
         
     </div>
     <!-- end of containter-->
+<script type="text/javascript" src="main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVQvC_BVvziFAv6qqFExtqPM-uFHphdYo&callback=myMap"></script> <!-- API for Google maps-->
 </body>
 
 </html>

@@ -19,6 +19,7 @@
 
     a {
         color: inherit;
+        text-decoration: none;
     }
 
     a:hover {
@@ -48,16 +49,16 @@
         padding-left: 5px;
     }
 
-    .home {
+    .home { 
         align-self: end;
         grid-row: 1/2;
         grid-column: 4/7;
         /*border: 2px solid #ffffff;*/
         color: white;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
-        line-height: 1.5em;
-    }
+        line-height: 2.3em;
+}
 
     .menu {
         align-self: end;
@@ -65,10 +66,10 @@
         grid-column: 7/10;
         /*border: 2px solid #ffffff;*/
         color: white;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
-        line-height: 1.5em;
-    }
+        line-height: 2.3em;
+}
 
     .contact {
         align-self: end;
@@ -76,10 +77,10 @@
         grid-column: 10/13;
         /*border: 2px solid #ffffff;*/
         color: white;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
-        line-height: 1.5em;
-    }
+        line-height: 2.3em;
+}
 
     li {
         display: inline-block;
@@ -92,16 +93,11 @@
     }
     /*  END OF HEADER  */
 
-/*    .contact-pic {
-    grid-column: 1/13;
-    grid-row: 1/11;
-    object-fit: cover;
-    z-index: -1;
-}*/
+
     .googlemaps {
         grid-column: 1/13;
-        grid-row: 1/13;
-        z-index: -1;
+        grid-row: 2/13;
+        /*z-index: -1;*/
         object-fit: cover;
     }
 
@@ -109,25 +105,12 @@
 
     #map {
         grid-column: 1/13;
-        grid-row: 1/13;
-        z-index: -1;
+        grid-row: 2/13;
+        /*z-index: -1;*/
         object-fit: cover;
         height: 100%;
         width: 100%;
       }
-
-
-
-
-    /* PAGE CONTENT */
-
-/*    .googlemaps {
-    	grid-column: 1/13;
-        grid-row: 11/20;
-        background: white;
-        border: 4px solid #000000;
-    }*/
-    
 
    .contactbox1 {
         grid-column: 1/5;
@@ -135,6 +118,7 @@
         background: white;
         /*border: 2px solid #000000 ;*/
         padding: 20px;
+        padding-top: 40px;
     }
 
     #contactbox1 {
@@ -148,6 +132,7 @@
         background: white;
         /*border: 2px solid #000000;*/
         padding: 20px;
+        padding-top: 40px;
     }
 
    .contactbox3 {
@@ -158,8 +143,44 @@
         padding: 50px;
     }
 
-    #submit_button {
+    /* FORM FIELD */
 
+    input[type=text] {
+        color:#ccc;
+        background-color: #fafafa;
+        padding:5px; 
+        border:2px solid #ccc; 
+    }
+
+    input[type=text]:focus {
+        background-color: #fafafa;
+        border:2px solid #E2C1B7;
+    }
+
+    input[type=message] {
+        background-color: #fafafa;
+        padding:5px; 
+        border:2px solid #ccc;
+    }
+
+    input[type=message]:focus {
+        background-color: #fafafa;
+        border:2px solid #E2C1B7;
+    }
+
+    textarea {
+        background-color: #fafafa;
+        padding:5px; 
+        border:2px solid #ccc;
+    }
+
+   input[type=submit] {
+        color: white;
+        font-size: 16px;
+        padding:15px 30px; 
+        background:#E2C1B7; 
+        border:0 none;
+        cursor:pointer;
     }
 
 
@@ -220,18 +241,11 @@
 
         <!--NAVIGATION/HEADER-->
         <div class="nav-bar"> </div>
-        <div class="logo"> OUT OF THE
-            <br>OFFICE </div>
-        <div class="home"> <a href="template1.html"> Home </a> </div>
-        <div class="menu"> <a href="menu.html"> Menu </a> </div>
-        <div class="contact"> <a href="contact.html"> Contact </a> </div>
+        <div class="logo"> OUT OF THE <br>OFFICE </div>
+        <div class="home"> <a href="template1.html"> HOME </a> </div>
+        <div class="menu"> <a href="menu.html"> MENU </a> </div>
+        <div class="contact"> <a href="contact.html"> CONTACT </a> </div>
         <!-- end of header -->
-
-        <!--Main pic of coffee -->
-<!--         <div class="contact-pic">
-            <img class="contact-pic" src="https://images.designtrends.com/wp-content/uploads/2016/02/24134401/Cute-Coffee-Wallpaper.jpg" alt="coffee" width="100%" height="100%">
-        </div> -->
-        <!---->
 
 
         <!--page content -->
@@ -240,47 +254,42 @@
             <div id='map'></div>
         </div>
 
-        <!--page content -->
-
-       <div class="googlemaps"> google maps </div>
+       <div class="googlemaps"></div>
        <div class="contactbox1">
            <h2>Do you want to know more about Out of the Office?</h2>
            <p id="contactbox1" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolores, adipisci quasi iste placeat veritatis ipsa modi, perferendis illo impedit ab quos porro reiciendis voluptatibus facere nemo fuga, sed recusandae!</p>
        </div>
        <div class="contactbox2">
-            <h2>John M. Keynesplein 4-10, Amsterdam</h2>
-            <h2>020 - 705 15 11</h2>
-            <h2>e.wiendels@outoftheoff.nl</h2>
-            <h2><a href="https://www.facebook.com/Out-Of-The-Office-763989723682782/">Facebook</a></h2>
+        <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="https://i.imgur.com/CpaOi47.png" width="80"/>
+        John M. Keynesplein 4-10, Amsterdam <br /><br />
+        020 - 705 15 11 <br /><br />
+        e.wiendels@outoftheoff.nl <br /><br />
+        <a href="https://www.facebook.com/Out-Of-The-Office-763989723682782/">Facebook</a><br style="clear: both;"/></h2>
         </div>
+
 
 
       <div class="contactbox3">
     <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
         <div class="row">
-            <label for="name">Your name:</label>
-            <input id="name" class="input" name="name" type="text" value="" size="50" />
+            <!-- <label for="name">Your name:</label> -->
+            <input id="name" class="input" name="name" type="text" placeholder="Name*" size="52" />
             <br />
         </div>
         <div class="row">
-            <label for="email">Your email:</label>
+            <!-- <label for="email">Your email:</label> -->
             <br />
-            <input id="email" class="input" name="email" type="text" value="" size="50" />
+            <input id="email" class="input" name="email" type="text" placeholder="Email*" size="52" />
             <br />
         </div>
         <div class="row">
-            <label for="message">Your message:</label>
             <br />
-            <textarea id="message" class="input" name="message" rows="10" cols="50"></textarea>
-            <br /><br /><br />
+            <textarea id="message" class="input" name="message" placeholder="Message" rows="10" cols="50"></textarea>
+            <br /><br />
         </div>
-        <input id="submit_button" type="submit" value="Send email" />
+        <input id="submit_button" type="submit" value="SEND MESSAGE" />
     </form>
 </div>
-
-
-
-
 
 
 

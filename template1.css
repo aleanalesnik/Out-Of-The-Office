@@ -30,13 +30,8 @@ a:hover {
 
 .logo {
     grid-row: 1/2;
-    align-self: start;
     grid-column: 1/4;
-   /*border: 2px dashed #ffffff;*/
-    color: white;
-    font-size: 19px;
-    text-align: center;
-    line-height: 1.5em;
+    align-self: start;
     padding-left: 5px;
 }
 
@@ -183,35 +178,28 @@ li {
 }
 
 .footerleft {
-	grid-column: 1/5;
-	grid-row: 26/28;	
-   /* border: 2px solid #FFFFFF;*/
+    grid-column: 1/5;
+    grid-row: 26/28;
     color: white;
     font-size: 20px;
     text-align: center;
-    line-height: 1em;
-      font-family: 'Josefin Sans', sans-serif;
-
+    line-height: 25px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .footermiddle {
 	grid-column: 6/8;
 	grid-row: 26/28;	
-    border: 2px solid #FFFFFF;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    line-height: 1em;
+  object-fit: contain;
 }
 
 .footerright {
 	grid-column: 9/13;
 	grid-row: 26/28;	
-    /*border: 2px solid #FFFFFF;*/	
     color: white;
     font-size: 20px;
     text-align: center;
-    line-height: 1em;
+    line-height: 25px;
 }
 
 

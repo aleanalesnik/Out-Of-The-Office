@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto" rel="stylesheet">
+    <link href="main.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- CONTAINER-->
+    <div class="container">
+        <!--nav-bar-->
+        <div class="nav-bar"> </div>
+        <!--logo-->
+        <div class="logo">
+            <a href="index.html"><img src="Images/FinalLogoTop.png" alt="logo" width="100%" height="100%"></a>
+        </div>
+        <!--home-->
+        <div class="home"> <a href="index.html"> HOME </a> </div>
+        <!--menu-->
+        <div class="menu"> <a href="menupage.html"> MENU </a> </div>
+        <!--contact-->
+        <div class="contact"> <a href="contactpage.html"> CONTACT </a> </div>
+        <!-- end nav -->
+
+
+
+
+
+        <!--page content -->
+        <div class="googlemaps">
+            <div id='map'></div>
+        </div>
+        <div class="googlemaps"></div>
+
+
+
+        <!-- box 1 -->
+        <div class="contactbox1">
+            <h2>Do you want to know more about Out of the Office?</h2>
+            <p id="contactbox1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolores, adipisci quasi iste placeat veritatis ipsa modi, perferendis illo impedit ab quos porro reiciendis voluptatibus facere nemo fuga, sed recusandae!</p>
+        </div>
+        <!--end box 1 -->
+        <!-- box 2 PICTURE -->
+        <div class="contactbox2-pic">
+            <img src="Images/Signs.png" width="100%" height="100%">
+        </div>
+        <!--end box 2 PICTURE -->
+        <!-- box 2 TEXT -->
+        <div class="contactbox2-text">
+            John M. Keynesplein 4-10, Amsterdam
+            <br>
+            <br>
+            <br> 020 - 705 15 11
+            <br>
+            <br>
+            <br> e.wiendels@outoftheoff.nl
+            <br>
+            <br>
+            <br> Facebook
+        </div>
+        <!--end box 2 TEXT -->
+        <div class="contactbox3">
+            <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <!-- <label for="name">Your name:</label> -->
+                    <input id="name" class="input" name="name" type="text" placeholder="Name*" size="52" />
+                    <br />
+                </div>
+                <div class="row">
+                    <!-- <label for="email">Your email:</label> -->
+                    <br />
+                    <input id="email" class="input" name="email" type="text" placeholder="Email*" size="52" />
+                    <br />
+                </div>
+                <div class="row">
+                    <br />
+                    <textarea id="message" class="input" name="message" placeholder="Message" rows="10" cols="50"></textarea>
+                    <br />
+                    <br />
+                </div>
+                <input id="submit_button" type="submit" value="SEND MESSAGE" />
+            </form>
+        </div>
+        <!--Footer-->
+        <div class="footer"></div>
+        <!--Footer Left-->
+        <div class="footerleft">
+            <p>
+                Hours:
+                <br> Monday - Friday
+                <br> 7:30AM - 3:30pm
+            </p>
+        </div>
+        <!--Footer Middle-->
+        <div class="footermiddle">
+            <img src="Images/LogoAlone.png" alt="footermiddle" width="100%" height="100%">
+        </div>
+        <!--Footer Right-->
+        <div class="footerright">
+            <p>
+                John M. Keynesplein 4-10
+                <br> 1066 EP Amsterdam
+                <br> 020 705 1511
+            </p>
+        </div>
+        <!---->
+    </div>
+    <!-- end of containter-->
+    <script type="text/javascript" src="mainjavascript.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVQvC_BVvziFAv6qqFExtqPM-uFHphdYo&callback=myMap"></script>
+    <!-- API for Google maps-->
+
+
+
+
+</body>
+
+</html>
